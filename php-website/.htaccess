@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If the request is not an actual file or directory,
+    # route to /src/views/{filename}
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /src/public/index.php [L]
+    DirectoryIndex /src/public/index.php
+
+</IfModule>

@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #252121;
+}
+
+/*
+--- NAVIGATION BAR START ---
+*/
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: gold;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.material-symbols-outlined:hover {
+    color: gold;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+#hero {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.content {
+    width: 20%;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background: white;
+}
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+p {
+    text-align: center;
+    color: black;
+    padding-top: 8px;
+}
+h6 {
+    color: black;
+    font-size: 26px;
+    text-align: center;
+}
+.actionBtn {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: dodgerblue;
+}
+.subNavBar {
+    justify-content: center;
+}
+.subNavBar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.subNavBar a {
+    text-decoration: none;
+    color: white;
+}
+.subNavBar a:hover {
+    color: gold;
+}
+
+iframe {
+    display: block;
+    width: 80%;
+    height: 500px;
+}
+section {
+    align-content: center;
+    text-align: center;
+}
+article p {
+    margin: 2vh;
+    padding: 1vh;
+    color: white;
+    text-align: center;
+}
+
+.title h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+
+.services {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 50px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card p {
+    width: 100%;
+    background-color: #303a4b;
+    padding: 10px 0;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #303a4b;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 2px 3px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txtField {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txtField input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txtField label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.txtField span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+    transition: 0.5s;
+}
+.txtField input:focus ~ label,
+.txtField input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+}
+.txtField input:focus ~ span::before,
+.txtField input:valid ~ span::before {
+    width: 100%;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+}
+input[type="submit"]:hover {
+    border-color: #2691d9;
+    transition: 0.5s;
+}
+.checkout table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.checkout h2 {
+    color: white;
+}
+.checkout p {
+    padding-left: 17.5rem;
+    text-align: left;
+    color: white;
+}
+.checkout table {
+    width: 70%;
+    background-color: white;
+    border-collapse: collapse;
+}
+.checkout th {
+    background-color: #d3d3d3;
+    text-align: left;
+}
+.checkout th:last-child {
+    text-align: center;
+}
+.checkout td {
+    text-align: left;
+}
+.checkout td > button {
+    margin: auto;
+    display: block;
+}
+.removeItem {
+    color: white;
+    background-color: dodgerblue;
+    border: black 1px solid;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+.buyButton {
+    color: white;
+    background-color: dodgerblue;
+    border: black 1px solid;
+    border-radius: 4px;
+    padding: 5px 15px;
+}

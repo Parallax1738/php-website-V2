@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  php-apache:
+    container_name: "bike-shop-web"
+    ports:
+      - "80:80"
+    build: './build/php'
+    environment:
+      - __DEFAULT_SEARCH_RESULT_COUNT=10
+      - __SYSADMIN_EMAIL=sa@mail.com
+      - __SYSADMIN_PASS=password
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=BIKE_SHOP
+    volumes:
+      - .:/var/www/html/
+      - ./website/apache/:/etc/apache2/sites-available/
+  mysql:
+    container_name: "bike-shop-database"
+    ports:
+      - "3306:3306"
+    build: './build/mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_DATABASE: "BIKE_SHOP"
+    volumes:
+      - dbData:/var/lib/mysql
+      - ./build/mysql/init-scripts:/docker-entrypoint-initdb.d/  # Add this line
+volumes:
+  app:
+  dbData:

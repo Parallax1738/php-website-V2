@@ -1,0 +1,13 @@
+{
+  "name": "conedor/bikeshop",
+  "description": "this is a bike shop",
+  "require": {
+    "ext-mysqli": "*",
+    "phpunit/phpunit": "10.4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "bikeshop\\": "src/"
+    }
+  }
+}
